@@ -1,0 +1,36 @@
+{
+  "ruff": {
+    "quoteStyle": "single",
+    "lineLength": 100,
+    "skipMagicTrailingComma": true
+  },
+  "typescript": {
+    "semiColons": "asi",
+    "quoteStyle": "preferSingle",
+    "jsx.quoteStyle": "preferDouble",
+    "quoteProps": "asNeeded",
+    "commentLine.forceSpaceAfterSlashes": true,
+    "singleBodyPosition": "sameLine",
+    "arrowFunction.useParentheses": "force"
+  },
+  "markup": {
+    "formatComments": true,
+    "html.normal.selfClosing": true,
+    "html.void.selfClosing": true,
+    "component.selfClosing": true,
+    "svg.selfClosing": true,
+    "mathml.selfClosing": true,
+    "vBindStyle": "short",
+    "vOnStyle": "short",
+    "vForDelimiterStyle": "in",
+    "vSlotStyle": "short",
+    "vBindSameNameShortHand": true,
+    "vueComponentCase": "pascalCase"
+  },
+  "excludes": ["**/package-lock.json", "**/*.svg"],
+  "plugins": [
+    "https://plugins.dprint.dev/typescript-0.95.15.wasm",
+    "https://plugins.dprint.dev/g-plane/markup_fmt-v0.27.0.wasm",
+    "https://plugins.dprint.dev/ruff-0.7.6.wasm"
+  ]
+}
